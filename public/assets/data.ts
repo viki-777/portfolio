@@ -310,11 +310,11 @@ export const data =[
           "projectDuration": "oct 2024 - dec 2024",
           "githubLink": "",
           "techStack": [
-                "Nextjs",
-                "TypeScript",
-                "MongoDB",
-                "Tailwind CSS",
-                "Prisma",
+                "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
+                "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png",
+                "https://www.svgrepo.com/show/331488/mongodb.svg",
+                "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjW3Gp5C8NeQpMw-J_05DQwyjFC9nRvLKog&s",
             ]
         },
        
@@ -323,14 +323,28 @@ export const data =[
           "projectDesc": "My developer portfolio made with beautiful and responsive UI with flowing animations with intention to demonstrate my potential as a candidate for various opportunities and to showcase my strengths and capabilities to potential employers or collaborators.",
           "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1730475841/ewmhexbqfgha6wd8hnd3.png",
           "projectLink": "",
-          "projectDuration": "Nov 2024"
+          "projectDuration": "Nov 2024",
+          "techStack": [
+                "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
+                "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png",
+                "https://www.svgrepo.com/show/331488/mongodb.svg",
+                "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjW3Gp5C8NeQpMw-J_05DQwyjFC9nRvLKog&s",
+            ]
         },
         {
           "projectName": "TrendTails",
           "projectDesc": "TrendTales is a modern, fully-featured blogging platform designed for sharing your stories, ideas, and insights with the world. Built with a focus on performance and scalability.",
           "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1730476223/spbqs9i5ak2uq2wzobwi.png",
           "projectLink": "",
-          "projectDuration": "July 2024 - Aug 2024"
+          "projectDuration": "July 2024 - Aug 2024",
+          "techStack": [
+                "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
+                "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png",
+                "https://www.svgrepo.com/show/331488/mongodb.svg",
+                "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjW3Gp5C8NeQpMw-J_05DQwyjFC9nRvLKog&s",
+            ]
         },
         
         {
@@ -338,7 +352,14 @@ export const data =[
           "projectDesc": "Built an amazing looking Portfolio website for a friend as a commision project. Admittedly it turned out better than my own.",
           "projectImage": "https://s13.gifyu.com/images/Sjdrs.gif",
           "projectLink": "https://anagha.tech",
-          "projectDuration": "Dec 2023"
+          "projectDuration": "Dec 2023",
+          "techStack": [
+                "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
+                "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png",
+                "https://www.svgrepo.com/show/331488/mongodb.svg",
+                "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjW3Gp5C8NeQpMw-J_05DQwyjFC9nRvLKog&s",
+            ]
         }
       ]
     },

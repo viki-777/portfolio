@@ -8,6 +8,7 @@ import Skills from "./components/skills/Skills";
 import { data } from "@/public/assets/data";
 import { Inter } from "next/font/google";
 import { useState, useEffect } from "react";
+import Projects from "./components/projects/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,14 @@ export default function Home() {
       </section>
       <section id="skills" className="snap-start snap-mandatory  snap-always">
         <Skills data={data[3]} />
+      </section>
+      <section id="projects" className="snap-start snap-mandatory  snap-always max-h-screen overflow-clip">
+        {width > 768 ? (
+          <Projects data={data[4]} />
+        ) : (
+          <div>mobile</div>
+        )}
+        
       </section>
     </div>
   );
