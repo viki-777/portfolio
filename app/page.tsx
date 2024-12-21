@@ -5,10 +5,13 @@ import Header from "@/app/components/header/Header";
 import Hero from "@/app/components/hero/Hero"
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/footer";
 import { data } from "@/public/assets/data";
 import { Inter } from "next/font/google";
 import { useState, useEffect } from "react";
 import Projects from "./components/projects/Projects";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,6 +47,11 @@ export default function Home() {
         )}
         
       </section>
+      <section id="contact" className="snap-start snap-mandatory  snap-always">
+        <Contact />
+        <Footer />
+      </section>
+
     </div>
   );
 }
