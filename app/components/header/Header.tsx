@@ -1,7 +1,7 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
-import { resumeIcon, mailIcon } from "./icon";
+import { resumeIcon, mailIcon,githubIcon } from "./icon";
 type Props = {
   data: any;
 };

@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         {/* Left Section */}
         <div className="text-sm text-gray-500 space-y-1 text-center md:text-left">
-          <p>Made with love ❤️ by Vikash</p>
+          <p>Made with 💚 by Vikash</p>
           <p>© {new Date().getFullYear()} All rights are Reserved</p>
         </div>
 

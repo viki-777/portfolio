@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion, useMotionValue, useTransform, useInView } from "framer-motion";
+import { ArrowTopRightOnSquareIcon, CodeBracketIcon} from "@heroicons/react/24/solid";
 
 type Props = {
   data: any;
@@ -18,7 +19,8 @@ const Projects = (props: Props) => {
   const [title, setTitle] = useState("Hover/click a project to see details");
   const [description, setDescription] = useState("");
   const [duration, setDuration] = useState("");
-  const [link, setLink] = useState("");
+  const [Projectlink, setProjectLink] = useState("");
+  const [GithubLink, setGithubLink] = useState("");
   const [techStack,setTechStack] = useState([]);
 
 
@@ -184,12 +186,36 @@ const Projects = (props: Props) => {
       ))}
     </div>
           {title !== "Hover/click a project to see details" ? (
+
+            <div className="flex space-x-4 p-4 justify-end"> 
+              
             <button
-              onClick={() => window.open(link, "_blank")}
-              className="border text-[#6B7280] border-[#10b981] mt-2 py-2 px-10 rounded-md font-bold transition duration-200  ease-in-out hover:bg-[#10b981] hover:text-black lg:w-full w-[300px]"
+              onClick={() => window.open(GithubLink, "_blank")}
+              className="border text-[#6B7280] border-[#10b981] mt-2 p-3 rounded-full font-bold transition duration-200  ease-in-out hover:bg-[#10b981] hover:text-black "
             >
-              Check it out !
+              Source Code <CodeBracketIcon className="h-5 w-5 inline ml-2" />
+              
             </button>
+            
+
+            <button
+              onClick={() => window.open(Projectlink, "_blank")}
+              className="border text-[#6B7280] border-[#10b981] mt-2 p-3 rounded-full font-bold transition duration-200  ease-in-out hover:bg-[#10b981] hover:text-black "
+            >
+              
+              Live<ArrowTopRightOnSquareIcon className="h-5 w-5 inline ml-2" />
+            </button>
+
+
+            {/* <Link href={link}>
+              <a
+                className="border text-[#6B7280] border-[#10b981] mt-2 py-2 px-10 rounded-md font-bold transition duration-200  ease-in-out hover:bg-[#10b981] hover:text-black lg:w-full w-[300px] text-center"
+              >
+                Check it out !
+              </a>
+              </Link> */}
+
+            </div>
           ) : null}
         </div>
 
@@ -214,8 +240,9 @@ const Projects = (props: Props) => {
                     setTitle(item.projectName);
                     setDescription(item.projectDesc);
                     setDuration(item.projectDuration);
-                    setLink(item.projectLink);
+                    setProjectLink(item.projectLink);
                     setTechStack(item.techStack);
+                    setGithubLink(item.githubLink);
                   }}
                   // onMouseLeave={() => {
                   //   setTitle("Hover a project to see details");

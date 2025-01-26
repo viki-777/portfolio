@@ -305,10 +305,10 @@ export const data =[
         {
           "projectName": "Appoint.com",
           "projectDesc": "The Appointment Booking System allows users to register, log in, create services, and book appointments. Users can view and manage upcoming appointments, and business owners can oversee their services. Key features include a user dashboard with sections for reservations and business management, plus search and filter options by location and category for streamlined service discovery.",
-          "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1730469422/peizjpgfu7twcn1dgcyy.png",
+          "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1737804647/service-images/portfolio/zdszhnyp5m7szvdgmeu3.gif",
           "projectLink": "https://appointcom.vercel.app/",
           "projectDuration": "oct 2024 - dec 2024",
-          "githubLink": "",
+          "githubLink": "https://github.com/viki-777/SE_Project",
           "techStack": [
                 "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
                 "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png",
@@ -323,6 +323,7 @@ export const data =[
           "projectDesc": "My developer portfolio made with beautiful and responsive UI with flowing animations with intention to demonstrate my potential as a candidate for various opportunities and to showcase my strengths and capabilities to potential employers or collaborators.",
           "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1730475841/ewmhexbqfgha6wd8hnd3.png",
           "projectLink": "",
+          "githubLink": "https://github.com/viki-777",
           "projectDuration": "Nov 2024",
           "techStack": [
                 "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
@@ -335,8 +336,9 @@ export const data =[
         {
           "projectName": "TrendTails",
           "projectDesc": "TrendTales is a modern, fully-featured blogging platform designed for sharing your stories, ideas, and insights with the world. Built with a focus on performance and scalability.",
-          "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1730476223/spbqs9i5ak2uq2wzobwi.png",
+          "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1737914487/service-images/portfolio/qwawntdihjatpiya1dio.gif",
           "projectLink": "",
+          "githubLink": "https://github.com/viki-777",
           "projectDuration": "July 2024 - Aug 2024",
           "techStack": [
                 "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
@@ -348,11 +350,12 @@ export const data =[
         },
         
         {
-          "projectName": "Commision Project",
-          "projectDesc": "Built an amazing looking Portfolio website for a friend as a commision project. Admittedly it turned out better than my own.",
-          "projectImage": "https://s13.gifyu.com/images/Sjdrs.gif",
-          "projectLink": "https://anagha.tech",
-          "projectDuration": "Dec 2023",
+          "projectName": "IdeaInk",
+          "projectDesc": "IdeaInk is a platform powered  by AI  where any one can generate there business name, tagline, logo, and domain name in just one click. It is a one stop solution for all your business needs.",
+          "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1737804713/service-images/portfolio/x7lt4ydasjrag9zxxrgb.gif",
+          "projectLink": "https://ideaink.vercel.app/",
+          "githubLink": "https://github.com/viki-777/SE_Project",
+          "projectDuration": "jan 2025",
           "techStack": [
                 "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
                 "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png",
