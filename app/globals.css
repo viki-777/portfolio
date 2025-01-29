@@ -7,8 +7,17 @@
     @apply px-6 py-2 mx-1 my-1 sm:my-0 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all hover:border hover:border-solid hover:border-[#10b981]/40 hover:text-[#10b981]/40;
   }
   .contactInput {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#10b981] focus:text-[#10b981] hover:border-[#10b981]/40;
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] 
+           text-gray-300 placeholder-gray-400 transition-all 
+           focus:border-[#10b981] focus:text-white 
+           hover:border-[#10b981]/40
+           focus:ring-1 focus:ring-[#10b981]/50
+           autofill:bg-[#10b981]/10
+           relative z-50;
   }
+  
+ 
+ 
 }
 
 /* css for skills */

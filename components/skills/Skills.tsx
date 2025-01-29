@@ -1,12 +1,12 @@
-// @ts-nocheck
 
+import { Skill, SkillsData } from "@/public/types";
 import React from "react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 type Props = {
-  data: any;
+  data: SkillsData;
 };
 
 function Skills(props: Props) {
@@ -16,22 +16,35 @@ function Skills(props: Props) {
   useEffect(() => {
     const nodes = [].slice.call(document.querySelectorAll("li"), 0);
 
-    const directions = { 0: "top", 1: "right", 2: "bottom", 3: "left" };
+    const directions: Record<number, string> = { 0: "top", 1: "right", 2: "bottom", 3: "left" };
     const classNames = ["in", "out"]
       .map((p) => Object.values(directions).map((d) => `${p}-${d}`))
       .reduce((a, b) => a.concat(b));
 
-    const getDirectionKey = (ev, node) => {
-      const { width, height, top, left } = node.getBoundingClientRect();
-      const l = ev.pageX - (left + window.pageXOffset);
-      const t = ev.pageY - (top + window.pageYOffset);
-      const x = l - (width / 2) * (width > height ? height / width : 1);
-      const y = t - (height / 2) * (height > width ? width / height : 1);
+    interface DirectionEvent extends MouseEvent {
+      pageX: number;
+      pageY: number;
+    }
+
+    interface DOMRect {
+      width: number;
+      height: number;
+      top: number;
+      left: number;
+    }
+
+    const getDirectionKey = (ev: DirectionEvent, node: HTMLElement): number => {
+      const { width, height, top, left }: DOMRect = node.getBoundingClientRect();
+      const l: number = ev.pageX - (left + window.pageXOffset);
+      const t: number = ev.pageY - (top + window.pageYOffset);
+      const x: number = l - (width / 2) * (width > height ? height / width : 1);
+      const y: number = t - (height / 2) * (height > width ? width / height : 1);
       return Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
     };
 
     class Item {
-      constructor(element) {
+      private element: HTMLElement;
+      constructor(element: HTMLElement) {
         this.element = element;
 
         this.element.addEventListener("mouseover", (ev) =>
@@ -43,11 +56,11 @@ function Skills(props: Props) {
         );
       }
 
-      update(ev, prefix) {
+      update(ev: MouseEvent, prefix: 'in' | 'out'): void {
         this.element.classList.remove(...classNames);
 
         this.element.classList.add(
-          `${prefix}-${directions[getDirectionKey(ev, this.element)]}`,
+          `${prefix}-${directions[getDirectionKey(ev as DirectionEvent, this.element)]}`,
         );
       }
     }
@@ -66,7 +79,7 @@ function Skills(props: Props) {
       <div className="pt-32 w-[90vw] h-[60vh]  md:w-[40vw] flex justify-center items-center z-20">
         <div className={`container `}>
           <ul className={`scale-[70%] md:scale-100 `}>
-            {props.data.skillData.map((item: any, key: any) => {
+            {props.data.skillData.map((item: Skill, key: number) => {
               return (
                 <motion.li
                   key={key}

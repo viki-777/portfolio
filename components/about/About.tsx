@@ -1,11 +1,18 @@
-import React from "react";
+import React , { MouseEvent }from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import Image from "next/image";
 import left from '@/public/assets/quote-left.png'
+interface AboutData {
+  _id: string;
+  aboutText: string;
+  section: string;
+  aboutImage: string;
+  aboutHoverImage: string;
+}
 
 
 type Props = {
-  data: any;
+  data: AboutData;
 };
 
 const About = (props: Props) => {
@@ -15,13 +22,12 @@ const About = (props: Props) => {
   const rotateX = useTransform(y, [0, 200], [10, -10]);
   const rotateY = useTransform(x, [0, 200], [-10, 10]);
 
-  function handleMouse(event: any) {
+  function handleMouse(event: MouseEvent<HTMLDivElement>) {
     const rect = event.currentTarget.getBoundingClientRect();
     x.set(event.clientX - rect.left);
     y.set(event.clientY - rect.top);
   }
-  function mouseLeave(event: any) {
-    const rect = event.currentTarget.getBoundingClientRect();
+  function mouseLeave() {
     x.set(100);
     y.set(100);
   }
@@ -124,11 +130,11 @@ const About = (props: Props) => {
               priority
             />
 
-            {props.data.aboutText.split(" ").map((word: any, key: any) => {
+            {props.data.aboutText.split(" ").map((word: string, index: number) => {
               return (
                 <span
                   className="hover:text-[#10b981] transition-all ease-in-out hover:scale-105 tracking-wide"
-                  key={key}
+                  key={index}
                 >
                   {word}{" "}
                 </span>

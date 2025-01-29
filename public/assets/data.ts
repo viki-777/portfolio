@@ -4,8 +4,8 @@ export const data =[
       "_id": "6432bd33fd88a2d9e3288e48",
       "aboutText": "👋 Hello, Dev community! I am Vikash. Passionate and driven college student currently pursuing a B.Tech+M.Tech in Information Technology at iiit Gwalior . Currently in my 3rd year, I am enthusiastic about exploring the dynamic world of technology and honing my skills in Full Stack Development and Problem Solving.",
       "section": "about",
-      "aboutImage": "https://res.cloudinary.com/viki07/image/upload/v1730468034/dxm5sgm7gvo9w4pc3lb0.webp",
-      "aboutHoverImage": ""
+      "aboutImage": "",
+      "aboutHoverImage": "https://images.deepai.org/art-image/8072f1df90bd4e669f7163dffaace141/a-3d-animated-man-working-with-a-laptop-theme_CixdFsK.jpg"
     },
     {
       "_id": "6432c66de600088d794f1e91",
@@ -18,7 +18,7 @@ export const data =[
         
       ],
       "title": "code. sleep. repeat.",
-      "heroImage": "https://res.cloudinary.com/viki07/image/upload/v1730468034/dxm5sgm7gvo9w4pc3lb0.webp"
+      "heroImage": "https://t4.ftcdn.net/jpg/05/90/45/35/360_F_590453560_ugMuPncnGYB6XnJqmC8xiPQx4eg3jmMD.jpg"
     },
     {
       "_id": "6432c881e600088d794f1e94",
@@ -310,12 +310,32 @@ export const data =[
           "projectDuration": "oct 2024 - dec 2024",
           "githubLink": "https://github.com/viki-777/SE_Project",
           "techStack": [
-                "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
-                "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png",
-                "https://www.svgrepo.com/show/331488/mongodb.svg",
-                "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjW3Gp5C8NeQpMw-J_05DQwyjFC9nRvLKog&s",
-            ]
+              {
+                  "name": "Next.js",
+                  "url": "https://i.ibb.co/3vDj7JL/Next-js-900x0.png"
+              },
+              {
+                  "name": "TypeScript",
+                  "url": "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png"
+              },
+              {
+                  "name": "MongoDB",
+                  "url": "https://www.svgrepo.com/show/331488/mongodb.svg"
+              },
+              {
+                  "name": "Tailwind",
+                  "url": "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg"
+              },
+              {
+                  "name": "Zustand",
+                  "url": "https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg"
+              },
+              {
+                  "name": "Prisma",
+                  "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjW3Gp5C8NeQpMw-J_05DQwyjFC9nRvLKog&s"
+              }
+          ]
+
         },
        
         {
@@ -323,29 +343,64 @@ export const data =[
           "projectDesc": "My developer portfolio made with beautiful and responsive UI with flowing animations with intention to demonstrate my potential as a candidate for various opportunities and to showcase my strengths and capabilities to potential employers or collaborators.",
           "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1730475841/ewmhexbqfgha6wd8hnd3.png",
           "projectLink": "",
-          "githubLink": "https://github.com/viki-777",
+          "githubLink": "https://github.com/viki-777/portfolio",
           "projectDuration": "Nov 2024",
           "techStack": [
-                "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
-                "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png",
-                "https://www.svgrepo.com/show/331488/mongodb.svg",
-                "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjW3Gp5C8NeQpMw-J_05DQwyjFC9nRvLKog&s",
+            {
+              "name": "Next.js",
+              "url": "https://i.ibb.co/3vDj7JL/Next-js-900x0.png"
+          },
+          {
+              "name": "TypeScript",
+              "url": "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png"
+          },
+          {
+              "name": "Framer Motion",
+              "url": "https://i.ibb.co/C2X2KyM/70574400-9e6a-11e9-8708-22d4bf4c3322.png"
+          },
+          {
+              "name": "Tailwind",
+              "url": "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg"
+          },
+         
+          {
+              "name": "Emailjs",
+              "url": "https://avatars.githubusercontent.com/u/17705215?s=280&v=4"
+          }
             ]
         },
         {
           "projectName": "TrendTails",
           "projectDesc": "TrendTales is a modern, fully-featured blogging platform designed for sharing your stories, ideas, and insights with the world. Built with a focus on performance and scalability.",
           "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1737914487/service-images/portfolio/qwawntdihjatpiya1dio.gif",
-          "projectLink": "",
-          "githubLink": "https://github.com/viki-777",
+          "projectLink": "https://github.com/viki-777/TrendTales-blogApp",
+          "githubLink": "https://github.com/viki-777/TrendTales-blogApp",
           "projectDuration": "July 2024 - Aug 2024",
           "techStack": [
-                "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
-                "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png",
-                "https://www.svgrepo.com/show/331488/mongodb.svg",
-                "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjW3Gp5C8NeQpMw-J_05DQwyjFC9nRvLKog&s",
+            {
+              "name": "Reactjs",
+              "url": "https://i.ibb.co/YyGmCM0/react.png"
+          },
+          {
+              "name": "TypeScript",
+              "url": "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png"
+          },
+          {
+              "name": "PostgreSQL",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/800px-Postgresql_elephant.svg.png"
+          },
+          {
+              "name": "Tailwind",
+              "url": "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg"
+          },
+          {
+              "name": "Cloudflare",
+              "url": "https://storage.googleapis.com/datanyze-data/technologies/cea5ea84baba636209c197114ed10b59483d9c64.png"
+          },
+          {
+              "name": "Prisma",
+              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjW3Gp5C8NeQpMw-J_05DQwyjFC9nRvLKog&s"
+          }
             ]
         },
         
@@ -354,14 +409,34 @@ export const data =[
           "projectDesc": "IdeaInk is a platform powered  by AI  where any one can generate there business name, tagline, logo, and domain name in just one click. It is a one stop solution for all your business needs.",
           "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1737804713/service-images/portfolio/x7lt4ydasjrag9zxxrgb.gif",
           "projectLink": "https://ideaink.vercel.app/",
-          "githubLink": "https://github.com/viki-777/SE_Project",
+          "githubLink": "https://github.com/viki-777/ideaInk",
           "projectDuration": "jan 2025",
           "techStack": [
-                "https://i.ibb.co/3vDj7JL/Next-js-900x0.png",
-                "https://i.ibb.co/V3Fw2Ft/Typescript-logo-2020-svg.png",
-                "https://www.svgrepo.com/show/331488/mongodb.svg",
-                "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjW3Gp5C8NeQpMw-J_05DQwyjFC9nRvLKog&s",
+            {
+              "name": "Next.js",
+              "url": "https://i.ibb.co/3vDj7JL/Next-js-900x0.png"
+          },
+          {
+              "name": "JavaScript",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+          },
+          {
+              "name": "Gemini",
+              "url": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.png"
+          },
+          {
+              "name": "Tailwind",
+              "url": "https://i.ibb.co/mD3rstb/z8hzeszc9eb3sp3vp3qc.jpg"
+          },
+          {
+            "name": "Docker",
+            "url": "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+          },
+          {
+              "name": "Shadcn Ui",
+              "url": "https://imgs.search.brave.com/C6l-AYB7M0JxDLX-g9Yaq67N8rEb2hDcUaKEckmNnFc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2Jp/cm9iaXJvYmlyby9h/d2Vzb21lLXNoYWRj/bi11aS82NDcyOWIy/YzE3OGUzZmRjYjQy/YzBjN2JmMzQxYmNk/ZTdhZTUwMmVhL2Fz/c2V0cy9sb2dvLnN2/Zw"
+          }
+          
             ]
         }
       ]

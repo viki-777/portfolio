@@ -1,27 +1,28 @@
-// @ts-nocheck
+
 "use client";
 import React from "react";
 import { useEffect, useState, useRef } from "react";
 import classes from "./Carousel.module.css";
 // import "./Carousel.module.css"
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { motion, useMotionValue, useTransform, useInView } from "framer-motion";
+
+import {  useInView } from "framer-motion";
 import { ArrowTopRightOnSquareIcon, CodeBracketIcon} from "@heroicons/react/24/solid";
+import { ProjectsData ,Project} from "@/public/types";
+
 
 type Props = {
-  data: any;
+  data: ProjectsData;
 };
 
 const Projects = (props: Props) => {
-  const router = useRouter();
+  
   const [title, setTitle] = useState("Hover/click a project to see details");
   const [description, setDescription] = useState("");
   const [duration, setDuration] = useState("");
   const [Projectlink, setProjectLink] = useState("");
   const [GithubLink, setGithubLink] = useState("");
-  const [techStack,setTechStack] = useState([]);
+  const [techStack,setTechStack] = useState<{ name: string; url: string }[]>([{name:"",url:""}]);
 
 
   const ref = useRef(null);
@@ -31,54 +32,67 @@ const Projects = (props: Props) => {
 
     if(isInView){
 
-    var radius = 300; // how big of the radius
-    var autoRotate = true; // auto rotate or not
-    var rotateSpeed = 20; // unit: seconds/360 degrees
-    var imgWidth = 300; // width of images (unit: px)
-    var imgHeight = 200; // height of images (unit: px)
+    const radius = 300; // how big of the radius
+    const autoRotate = true; // auto rotate or not
+    const rotateSpeed = 20; // unit: seconds/360 degrees
+    const imgWidth = 300; // width of images (unit: px)
+    const imgHeight = 200; // height of images (unit: px)
 
-    // Link of background music - set 'null' if you dont want to play background music
-    var bgMusicURL =
-      "https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a";
-    var bgMusicControls = true; // Show UI music control
 
    
     // animation start after 1000 miliseconds
     setTimeout(init, 200);
 
-    var odrag = document.getElementById("drag-container");
-    var ospin = document.getElementById("spin-container");
-    var aImg = ospin.getElementsByTagName("img");
-    var aVid = ospin.getElementsByTagName("video");
+    const odrag = document.getElementById("drag-container");
+    const ospin = document.getElementById("spin-container");
+    if (!ospin) return;
+    const aImg = ospin.getElementsByTagName("img");
+    const aVid = ospin.getElementsByTagName("video");
 
-    var aEle = [...aImg, ...aVid]; // combine 2 arrays
+    const aEle = [...aImg, ...aVid]; // combine 2 arrays
 
     // Size of images
     ospin.style.width = imgWidth + "px";
     ospin.style.height = imgHeight + "px";
 
     // Size of ground - depend on radius
-    var ground = document.getElementById("ground");
-    ground.style.width = radius * 3 + "px";
-    ground.style.height = radius * 3 + "px";
+    const ground = document.getElementById("ground");
+    if (ground) {
+      ground.style.width = radius * 3 + "px";
+      ground.style.height = radius * 3 + "px";
+    }
 
-    function init(delayTime) {
-      for (var i = 0; i < aEle.length; i++) {
-        aEle[i].style.transform =
+    interface ElementStyle extends HTMLElement {
+      style: CSSStyleDeclaration;
+    }
+
+    function init(delayTime?: number) {
+      for (let i: number = 0; i < aEle.length; i++) {
+        const element = aEle[i] as ElementStyle;
+        element.style.transform =
           "rotateY(" +
           i * (360 / aEle.length) +
           "deg) translateZ(" +
           radius +
           "px)";
-        aEle[i].style.transition = "transform 1s";
-        aEle[i].style.transitionDelay =
-        // adjust the number to set the duration of initial animation
-          delayTime || (aEle.length - i) / 8 + "s";
+        element.style.transition = "transform 1s";
+        element.style.transitionDelay =
+          // adjust the number to set the duration of initial animation
+          (delayTime || ((aEle.length - i) / 8).toString() + "s").toString();
       }
-  
     }
 
-    function applyTranform(obj) {
+    interface TransformableElement extends HTMLElement {
+      style: CSSStyleDeclaration;
+    }
+
+    interface DragContainer extends HTMLElement {
+      timer?: NodeJS.Timeout;
+    }
+
+    const odragElement = odrag as DragContainer;
+
+    function applyTranform(obj: TransformableElement): void {
       // Constrain the angle of camera (between 0 and 180)
       
       if (tY > 30) tY = 30;
@@ -88,14 +102,15 @@ const Projects = (props: Props) => {
       obj.style.transform = "rotateX(" + -tY + "deg) rotateY(" + tX + "deg)";
     }
 
-    function playSpin(yes) {
-      ospin.style.animationPlayState = yes ? "running" : "paused";
+    interface SpinContainer extends HTMLElement {
+      style: CSSStyleDeclaration;
     }
 
-    var sX,
-      sY,
-      nX,
-      nY,
+    function playSpin(yes: boolean): void {
+      const ospin = document.getElementById('spin-container') as SpinContainer;
+      ospin.style.animationPlayState = yes ? "running" : "paused";
+    }
+    let
       desX = 0,
       desY = 0,
       tX = 0,
@@ -103,7 +118,7 @@ const Projects = (props: Props) => {
 
     // auto spin
     if (autoRotate) {
-      var animationName = rotateSpeed > 0 ? `${classes.spin}`: `${classes.spinRevert}`;
+      const animationName = rotateSpeed > 0 ? `${classes.spin}`: `${classes.spinRevert}`;
       ospin.style.animation = `${animationName} ${Math.abs(
         rotateSpeed
       )}s infinite linear`;
@@ -111,39 +126,40 @@ const Projects = (props: Props) => {
 
     // setup events
     document.onpointerdown = function (e) {
-      clearInterval(odrag.timer);
+     
       e = e || window.event;
-      var sX = e.clientX,
+      let sX = e.clientX,
         sY = e.clientY;
 
       this.onpointermove = function (e) {
         e = e || window.event;
-        var nX = e.clientX,
+        const nX = e.clientX,
           nY = e.clientY;
         desX = nX - sX;
         desY = nY - sY;
         tX += desX * 0.1;
         tY += desY * 0.1;
-        applyTranform(odrag);
+        if (odrag) applyTranform(odrag as TransformableElement);
         sX = nX;
         sY = nY;
       };
 
-      this.onpointerup = function (e) {
-        odrag.timer = setInterval(function () {
+        odragElement.timer = setInterval(function () {
+        if(!odrag) return;
+        (odrag as DragContainer).timer = setInterval(function () {
           desX *= 0.95;
           desY *= 0.95;
           tX += desX * 0.1;
           tY += desY * 0.1;
-          applyTranform(odrag);
+         
           playSpin(false);
           if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
-            clearInterval(odrag.timer);
+            
             playSpin(true);
           }
         }, 17);
-        this.onpointermove = this.onpointerup = null;
-      };
+        
+      });
 
       return false;
     };
@@ -176,14 +192,23 @@ const Projects = (props: Props) => {
           </p>
           <div className="flex space-x-4 p-4">
            <p className="text-[#6B7280] lg:text-left font-semibold text-xl"> TechStack: </p>
-      {techStack.map((icon, index) => (
-        <img
-          key={index}
-          src={icon}
-          alt={`Tech Stack ${index + 1}`}
-          className="w-8 h-8  object-contain rounded-full border-2 border-gray-300"
-        />
-      ))}
+           {techStack.map((tech, index) => (
+            <div key={index} className="relative group">
+              <Image
+                src={tech.url}
+                alt={tech.name}
+                width={32}
+                height={32}
+                title={tech.name} // Shows name on hover
+                className="object-contain rounded-full border-s-2 border-emerald-400 cursor-pointer"
+                priority
+              />
+              <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block bg-gray-800 text-white text-xs rounded py-1 px-2">
+                {tech.name}
+              </span>
+            </div>
+          ))}
+
     </div>
           {title !== "Hover/click a project to see details" ? (
 
@@ -228,7 +253,7 @@ const Projects = (props: Props) => {
             className={`${classes.spinContainer}`}
           >
             {/* Add your images (or video) here */}
-            {props.data.projectsData.map((item, index) => {
+            {props.data.projectsData.map((item:Project, index:number) => {
               return (
                 <Image
                   src={item.projectImage}
@@ -264,3 +289,7 @@ const Projects = (props: Props) => {
 };
 
 export default Projects;
+
+
+
+
