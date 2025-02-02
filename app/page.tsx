@@ -3,6 +3,7 @@
 
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero"
+
 import About from "../components/about/About";
 import Skills from "../components/skills/Skills";
 import Contact from "../components/contact/Contact";
@@ -30,7 +31,9 @@ export default function Home() {
     text-white h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll z-0 sm:scrollbar-thin sm:scrollbar-thumb-[#F7AB0A]/80 sm:scrollbar-transparent sm:scrollbar-thumb-rounded-full sm:scrollbar-track-rounded-full">
       {/* Passing specific data to the Header component */}
       <Header data={data[5] as HeaderData} />
+      
       <section id="hero" className="snap-start">
+
         <Hero data={data[1] as HeroData} />
       </section>
       <section id="about" className="snap-center snap-mandatory  snap-always">
