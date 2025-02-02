@@ -67,7 +67,7 @@ const Hero = (props: Props) => {
             <Link href="#projects">
               <button className="heroButton">Projects</button>
             </Link>
-            <Link href="https/" target="_blank">
+            <Link href="https://drive.google.com/file/d/17dSyCEMilpwLPQVHkhGGZ0Yo5wtVEib1/view" target="_blank">
               <button className="heroButton">Resume</button>
             </Link>
           </div>

@@ -446,10 +446,9 @@ export const data =[
       "section": "header",
       "linkedin": "https://www.linkedin.com/in/vikash-kumar-b32506214/",
       "twitter": "https://twitter.com   ",
-      
       "github": "https://github.com/viki-777",
-      "instagram": "",
-      "resume": "",
-      "whatsapp": "https://wa.me/+916287634513"
+      "resume": "https://drive.google.com/file/d/17dSyCEMilpwLPQVHkhGGZ0Yo5wtVEib1/view",
+      "whatsapp": "https://wa.me/+916287634513",
+      "mail": "vikas.iiitm.career@gmail.com"
     }
   ]

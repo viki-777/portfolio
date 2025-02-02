@@ -3,6 +3,7 @@ import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Menu ,Home} from "lucide-react"; // Import menu icon
+import Icon from "./icon";
 
 interface HeaderData {
   _id: string;
@@ -91,6 +92,16 @@ const Header = (props: Props) => {
             target="_blank"
             rel="noreferrer"
           />
+          
+          <a href={props.data.resume} target="_blank" rel="noreferrer">
+          <div className="w-[1.68rem] fill-[#808080] scale-75 hover:scale-[85%] hover:fill-[#10b981]/70 transition ease-in-out duration-200">
+          <Icon type="resume" />
+          </div>
+          </a>
+
+
+
+
         </motion.div>
 
         {/* Mobile Menu Button */}

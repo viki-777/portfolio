@@ -67,4 +67,5 @@ export interface AboutData {
     instagram: string;
     resume: string;
     whatsapp: string;
+    mail: string;
   }
