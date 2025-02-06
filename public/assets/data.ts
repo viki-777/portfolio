@@ -408,7 +408,7 @@ export const data =[
           "projectName": "IdeaInk",
           "projectDesc": "IdeaInk is a platform powered  by AI  where any one can generate there business name, tagline, logo, and domain name in just one click. It is a one stop solution for all your business needs.",
           "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1737804713/service-images/portfolio/x7lt4ydasjrag9zxxrgb.gif",
-          "projectLink": "https://ideaink.vercel.app/",
+          "projectLink": "https://idea-ink.vercel.app/",
           "githubLink": "https://github.com/viki-777/ideaInk",
           "projectDuration": "jan 2025",
           "techStack": [
