@@ -5,7 +5,8 @@ export const data =[
       "aboutText": "👋 Hello, Dev community! I am Vikash. Passionate and driven college student currently pursuing a B.Tech+M.Tech in Information Technology at iiit Gwalior . Currently in my 3rd year, I am enthusiastic about exploring the dynamic world of technology and honing my skills in Full Stack Development and Problem Solving.",
       "section": "about",
       "aboutImage": "",
-      "aboutHoverImage": "https://images.deepai.org/art-image/8072f1df90bd4e669f7163dffaace141/a-3d-animated-man-working-with-a-laptop-theme_CixdFsK.jpg"
+      //"aboutHoverImage": "https://images.deepai.org/art-image/8072f1df90bd4e669f7163dffaace141/a-3d-animated-man-working-with-a-laptop-theme_CixdFsK.jpg"
+      "aboutHoverImage":"https://blubirdmarketingservices.com/wp-content/uploads/2022/04/Programming-amico-1-min-1024x1024.png",
     },
     {
       "_id": "6432c66de600088d794f1e91",
@@ -18,7 +19,8 @@ export const data =[
         
       ],
       "title": "code. sleep. repeat.",
-      "heroImage": "https://t4.ftcdn.net/jpg/05/90/45/35/360_F_590453560_ugMuPncnGYB6XnJqmC8xiPQx4eg3jmMD.jpg"
+      "heroImage":"https://images.deepai.org/art-image/8072f1df90bd4e669f7163dffaace141/a-3d-animated-man-working-with-a-laptop-theme_CixdFsK.jpg",
+      //"heroImage": "https://t4.ftcdn.net/jpg/05/90/45/35/360_F_590453560_ugMuPncnGYB6XnJqmC8xiPQx4eg3jmMD.jpg"
     },
     {
       "_id": "6432c881e600088d794f1e94",
@@ -342,7 +344,7 @@ export const data =[
           "projectName": "Portfolio Website",
           "projectDesc": "My developer portfolio made with beautiful and responsive UI with flowing animations with intention to demonstrate my potential as a candidate for various opportunities and to showcase my strengths and capabilities to potential employers or collaborators.",
           "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1730475841/ewmhexbqfgha6wd8hnd3.png",
-          "projectLink": "",
+          "projectLink": null,
           "githubLink": "https://github.com/viki-777/portfolio",
           "projectDuration": "Nov 2024",
           "techStack": [

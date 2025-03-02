@@ -2,7 +2,7 @@ export interface AboutData {
     _id: string;
     aboutText: string;
     section: string;
-    aboutImage: string;
+    aboutImage: string ;
     aboutHoverImage: string;
   }
   

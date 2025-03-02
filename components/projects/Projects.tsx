@@ -31,11 +31,11 @@ const Projects = (props: Props) => {
   useEffect(() => {
     if (!isInView) return;
 
-    const radius = 300;
+    const radius = window.innerWidth < 768 ? 200 : 300;
     const autoRotate = true;
-    const rotateSpeed = 20;
-    const imgWidth = 300;
-    const imgHeight = 200;
+    const rotateSpeed = 35;
+    const imgWidth = window.innerWidth < 768 ? 200 : 300;
+    const imgHeight = window.innerWidth < 768 ? 130 : 200;
 
     const odrag = document.getElementById("drag-container") as HTMLDivElement;
     const ospin = document.getElementById("spin-container") as HTMLDivElement;
@@ -65,6 +65,9 @@ const Projects = (props: Props) => {
         element.style.transitionDelay = ((aEle.length - i) / 8).toString() + "s";
       }
     }
+
+
+  
 
     function applyTransform(tX: number, tY: number): void {
       if (!odragRef.current) return;
@@ -144,7 +147,8 @@ const Projects = (props: Props) => {
 
     return () => {
       if (odragRef.current) {
-        odragRef.current.removeEventListener('pointerdown', handlePointerDown);
+       odragRef.current.removeEventListener('pointerdown', handlePointerDown);
+      
       }
       document.removeEventListener('pointermove', handlePointerMove);
       document.removeEventListener('pointerup', handlePointerUp);
@@ -195,7 +199,7 @@ const Projects = (props: Props) => {
             ))}
           </div>
 
-          {title !== "Hover/click a project to see details" && (
+          {title !== "Click a project to see details" && (
             <div className="flex space-x-4 p-4 justify-end">
               <button
                 onClick={() => window.open(GithubLink, "_blank")}
@@ -223,7 +227,7 @@ const Projects = (props: Props) => {
               {props.data.projectsData.map((item: Project, index: number) => (
                 <Image
                   src={item.projectImage}
-                  alt=""
+                  alt="project Image"
                   fill
                   quality={100}
                   key={index}
@@ -251,3 +255,4 @@ const Projects = (props: Props) => {
 };
 
 export default Projects;
+
