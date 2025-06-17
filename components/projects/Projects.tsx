@@ -161,26 +161,26 @@ const Projects = (props: Props) => {
       ref={ref}
       className={`${classes.body} h-screen relative overflow-hidden flex flex-col-reverse gap-y-0 text-left md:flex-row justify-center mx-auto items-center z-0 max-w-full`}
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl cursor-default">
+      <h3 className="absolute top-24 uppercase tracking-[20px]   text-2xl cursor-default">
         Projects
       </h3>
-      <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm cursor-default">
+      <h3 className="absolute top-36 uppercase tracking-[3px]   text-sm cursor-default">
         Drag to explore
       </h3>
 
       <>
         <div className="lg:absolute flex flex-col pl-10 items-center scale-75 lg:scale-100 justify-center lg:flex-none w-full lg:w-auto bottom-2 lg:bottom-auto left-4 transition-all ease-in-out duration-300">
-          <h2 className="text-4xl top-40 w-[450px] text-center lg:text tracking-[10px] text-[#6B7280]">
+          <h2 className="text-4xl top-40 w-[450px] text-center lg:text tracking-[10px] text-white/50">
             {title}
           </h2>
           <p className="text-lg top-52 w-[450px] text-center tracking-[10px] text-[#10b981]/80">
             {duration}
           </p>
-          <p className="top-[15rem] text-md w-[450px] text-center lg:text-left tracking-widest text-[#6B7280]">
+          <p className="top-[15rem] text-md w-[450px] text-center lg:text-left tracking-widest text-white/80">
             {description}
           </p>
           <div className="flex space-x-4 p-4">
-            <p className="text-[#6B7280] lg:text-left font-semibold text-xl">TechStack: </p>
+            <p className="text-white/50 lg:text-left font-semibold text-xl">TechStack: </p>
             {techStack.map((tech, index) => (
               <div key={index} className="relative group">
                 <Image
@@ -189,7 +189,7 @@ const Projects = (props: Props) => {
                   width={32}
                   height={32}
                   title={tech.name}
-                  className="object-contain rounded-full border-s-2 border-emerald-400 cursor-pointer"
+                  className="object-contain rounded-full border border-emerald-400 cursor-pointer"
                   priority
                 />
                 <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block bg-gray-800 text-white text-xs rounded py-1 px-2">
@@ -203,14 +203,14 @@ const Projects = (props: Props) => {
             <div className="flex space-x-4 p-4 justify-end">
               <button
                 onClick={() => window.open(GithubLink, "_blank")}
-                className="border text-[#6B7280] border-[#10b981] mt-2 p-3 rounded-full font-bold transition duration-200 ease-in-out hover:bg-[#10b981] hover:text-black"
+                className="border text-white/50 border-[#10b981] mt-2 p-3 rounded-full font-bold transition duration-200 ease-in-out hover:bg-[#10b981] hover:text-black"
               >
                 Source Code <CodeBracketIcon className="h-5 w-5 inline ml-2" />
               </button>
 
               <button
                 onClick={() => window.open(Projectlink, "_blank")}
-                className="border text-[#6B7280] border-[#10b981] mt-2 p-3 rounded-full font-bold transition duration-200 ease-in-out hover:bg-[#10b981] hover:text-black"
+                className="border text-white/50 border-[#10b981] mt-2 p-3 rounded-full font-bold transition duration-200 ease-in-out hover:bg-[#10b981] hover:text-black"
               >
                 Live<ArrowTopRightOnSquareIcon className="h-5 w-5 inline ml-2" />
               </button>

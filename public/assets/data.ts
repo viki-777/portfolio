@@ -1,13 +1,33 @@
 
 export const data =[
     {
-      "_id": "6432bd33fd88a2d9e3288e48",
-      "aboutText": "👋 Hello, Dev community! I am Vikash. Passionate and driven college student currently pursuing a B.Tech+M.Tech in Information Technology at iiit Gwalior . Currently in my 3rd year, I am enthusiastic about exploring the dynamic world of technology and honing my skills in Full Stack Development and Problem Solving.",
-      "section": "about",
-      "aboutImage": "",
-      //"aboutHoverImage": "https://images.deepai.org/art-image/8072f1df90bd4e669f7163dffaace141/a-3d-animated-man-working-with-a-laptop-theme_CixdFsK.jpg"
-      "aboutHoverImage":"https://blubirdmarketingservices.com/wp-content/uploads/2022/04/Programming-amico-1-min-1024x1024.png",
+  name: "Vikash Kumar", 
+  mainImage: "https://res.cloudinary.com/viki07/image/upload/service-images/portfolio/d7gcz5s8tg5ijrnoht0w.png", // Cropped image of the shark plushie
+  avatarImage: "https://res.cloudinary.com/viki07/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1750111387/service-images/portfolio/d7gcz5s8tg5ijrnoht0w.png", // Cropped image of the avatar
+  githubUrl: "https://github.com/viki-777",
+  skills: [
+    {
+      title: "Web Developer",
+      //icon: <Atom size={24} />,
+      description: "Ship Modern Website on demand",
     },
+    {
+      title: "Software Engineer",
+      //icon: <Code2 size={24} />,
+      description: "Love to write nice Chat apps and Dashboards",
+    },
+    {
+      title: "UI Designer",
+      //icon: <Paintbrush size={24} />,
+      description: "Designed many nice Websites & UI",
+    },
+    {
+      title: "Backend Engineer",
+      //icon: <Server size={24} />,
+      description: "Built Dashboard Backend APIs with SQL and NoSQL",
+    },
+  ],
+},
     {
       "_id": "6432c66de600088d794f1e91",
       "section": "hero",
@@ -21,184 +41,8 @@ export const data =[
       "title": "code. sleep. repeat.",
       "heroImage":"https://images.deepai.org/art-image/8072f1df90bd4e669f7163dffaace141/a-3d-animated-man-working-with-a-laptop-theme_CixdFsK.jpg",
       //"heroImage": "https://t4.ftcdn.net/jpg/05/90/45/35/360_F_590453560_ugMuPncnGYB6XnJqmC8xiPQx4eg3jmMD.jpg"
-    },
-    {
-      "_id": "6432c881e600088d794f1e94",
-      "section": "certifications",
-      "certData": [
-        {
-          "name": "React Native",
-          "link": "https://my.visme.co/view/x4nvrk4d-untitled-project#s1",
-          "provider": "Coursera",
-          "offeredBy": "Meta",
-          "logo": "https://img.freepik.com/free-vector/meta-logo-file-social-media-icon-vector-3-november-2021-bangkok-thailand_53876-157873.jpg?w=740&t=st=1677649912~exp=1677650512~hmac=fffe7c72ef2bb4718490a552542baf7a3d57fae73d1813f21b07b02be7628900",
-          "status": "Ongoing",
-          "learnPoints": [
-            "Mobile Development",
-            "App Development",
-            "Cross Platform  Development"
-          ]
-        },
-        {
-          "name": "Principles of UX/UI Design",
-          "link": "https://my.visme.co/view/x4nvrk4d-untitled-project#s1",
-          "provider": "Coursera",
-          "offeredBy": "Meta",
-          "logo": "https://img.freepik.com/free-vector/meta-logo-file-social-media-icon-vector-3-november-2021-bangkok-thailand_53876-157873.jpg?w=740&t=st=1677649912~exp=1677650512~hmac=fffe7c72ef2bb4718490a552542baf7a3d57fae73d1813f21b07b02be7628900",
-          "status": "Ongoing",
-          "learnPoints": [
-            "UX",
-            "UI",
-            "Design Fundamentals"
-          ]
-        },
-        {
-          "name": "Developing Back-End Apps with Node.js and Express",
-          "link": "https://www.coursera.org/account/accomplishments/certificate/R2WGLBLNYL5X",
-          "provider": "Coursera",
-          "offeredBy": "IBM",
-          "logo": "https://www.buyalicence.com/wp-content/uploads/2019/03/ibm-logo-circular-grey.png",
-          "status": "Completed",
-          "learnPoints": [
-            "back-end development",
-            "Server-side JavaScript",
-            "RESTful API"
-          ]
-        },
-        {
-          "name": "JavaScript Algorithms and Data Structures",
-          "link": "https://www.freecodecamp.org/certification/fcc11e5227f-5153-468c-9cd6-5b245694882a/javascript-algorithms-and-data-structures",
-          "provider": "FreeCodeCamp",
-          "offeredBy": "FreeCodeCamp",
-          "logo": "https://cdn.changelog.com/uploads/icons/news_sources/Qo/icon_small.png?v=63680075631",
-          "status": "Completed",
-          "learnPoints": [
-            "JavaScript",
-            "Algorithms",
-            "ES6",
-            "Data Structures",
-            "OOP",
-            "Debugging"
-          ]
-        },
-        {
-          "name": "Responsive Web Design",
-          "link": "https://www.freecodecamp.org/certification/fcc11e5227f-5153-468c-9cd6-5b245694882a/responsive-web-design",
-          "provider": "FreeCodeCamp",
-          "offeredBy": "FreeCodeCamp",
-          "logo": "https://cdn.changelog.com/uploads/icons/news_sources/Qo/icon_small.png?v=63680075631",
-          "status": "Completed",
-          "learnPoints": [
-            "HTML",
-            "CSS",
-            "Visual Design",
-            "Accessibility",
-            "Responsive Design"
-          ]
-        },
-        {
-          "name": "React Basics",
-          "link": "https://www.coursera.org/account/accomplishments/certificate/4X8CDJ5KE8NT",
-          "provider": "Coursera",
-          "offeredBy": "Meta",
-          "logo": "https://img.freepik.com/free-vector/meta-logo-file-social-media-icon-vector-3-november-2021-bangkok-thailand_53876-157873.jpg?w=740&t=st=1677649912~exp=1677650512~hmac=fffe7c72ef2bb4718490a552542baf7a3d57fae73d1813f21b07b02be7628900",
-          "status": "Completed",
-          "learnPoints": [
-            "Web Application",
-            "Front-End Web Development",
-            "React (Web Framework)",
-            "Application development"
-          ]
-        },
-        {
-          "name": "Advanced React",
-          "link": "https://www.coursera.org/account/accomplishments/certificate/FSH2MVZATYTG",
-          "provider": "Coursera",
-          "offeredBy": "Meta",
-          "logo": "https://img.freepik.com/free-vector/meta-logo-file-social-media-icon-vector-3-november-2021-bangkok-thailand_53876-157873.jpg?w=740&t=st=1677649912~exp=1677650512~hmac=fffe7c72ef2bb4718490a552542baf7a3d57fae73d1813f21b07b02be7628900",
-          "status": "Completed",
-          "learnPoints": [
-            "Unit Testing",
-            "Front-End Web Development",
-            "React (Web Framework)"
-          ]
-        },
-        {
-          "name": "Introduction to Cloud Computing",
-          "link": "https://www.coursera.org/account/accomplishments/certificate/MXREZ3QSVQRT",
-          "provider": "Coursera",
-          "offeredBy": "IBM",
-          "logo": "https://www.buyalicence.com/wp-content/uploads/2019/03/ibm-logo-circular-grey.png",
-          "status": "Completed",
-          "learnPoints": [
-            "Cloud Native",
-            "Devops intro",
-            "Iaas",
-            "PaaS",
-            "Saas",
-            "Hybrid Multicloud",
-            "Cloud Computing"
-          ]
-        },
-        {
-          "name": "Getting Started with Git and GitHub",
-          "link": "https://www.coursera.org/account/accomplishments/certificate/3ECGGC44FS96",
-          "provider": "Coursera",
-          "offeredBy": "IBM",
-          "logo": "https://www.buyalicence.com/wp-content/uploads/2019/03/ibm-logo-circular-grey.png",
-          "status": "Completed",
-          "learnPoints": [
-            "open source",
-            "Version Control Systems",
-            "Github",
-            "Git (Software)"
-          ]
-        },
-        {
-          "name": "Developing Front-End Apps with React",
-          "link": "https://www.coursera.org/account/accomplishments/certificate/RG9VE8MKTNWE",
-          "provider": "Coursera",
-          "offeredBy": "IBM",
-          "logo": "https://www.buyalicence.com/wp-content/uploads/2019/03/ibm-logo-circular-grey.png",
-          "status": "Completed",
-          "learnPoints": [
-            "Web Development",
-            "UI",
-            "Front-End Web Development",
-            "React",
-            "JavaScript"
-          ]
-        },
-        {
-          "name": "HTML and CSS in depth",
-          "link": "https://www.coursera.org/account/accomplishments/certificate/Z4LX3TY42AZ5",
-          "provider": "Coursera",
-          "offeredBy": "Meta",
-          "logo": "https://img.freepik.com/free-vector/meta-logo-file-social-media-icon-vector-3-november-2021-bangkok-thailand_53876-157873.jpg?w=740&t=st=1677649912~exp=1677650512~hmac=fffe7c72ef2bb4718490a552542baf7a3d57fae73d1813f21b07b02be7628900",
-          "status": "Completed",
-          "learnPoints": [
-            "Debugging",
-            "React (Web Framework)",
-            "User Interface",
-            "HTML/CSS",
-            "JavaScript"
-          ]
-        },
-        {
-          "name": "Programming with JavaScript",
-          "link": "https://www.coursera.org/account/accomplishments/certificate/NPX3KQTRYKNM",
-          "provider": "Coursera",
-          "offeredBy": "Meta",
-          "logo": "https://img.freepik.com/free-vector/meta-logo-file-social-media-icon-vector-3-november-2021-bangkok-thailand_53876-157873.jpg?w=740&t=st=1677649912~exp=1677650512~hmac=fffe7c72ef2bb4718490a552542baf7a3d57fae73d1813f21b07b02be7628900",
-          "status": "Completed",
-          "learnPoints": [
-            "Test-Driven Development",
-            "JavaScript",
-            "Front-End Web Development",
-            "OOP"
-          ]
-        }
-      ]
+    },{
+      
     },
     {
       "_id": "6432cb77e600088d794f1e96",
@@ -296,8 +140,25 @@ export const data =[
         {
             "skillName": "postman",
             "proficiency": "60",
-            "imageLink": "https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png"
-          }
+            "imageLink": "https://res.cloudinary.com/viki07/image/upload/v1750157451/service-images/portfolio/nrtwigytnfqoyspf51fz.png"
+        },
+        {
+            "skillName": "Docker",
+            "proficiency": "60",
+            "imageLink": "https://res.cloudinary.com/viki07/image/upload/v1750157459/service-images/portfolio/mq4co7yaqtmuyxch1ca2.png"
+        },
+           
+        {
+            "skillName": "AWS",
+            "proficiency": "60",
+            "imageLink": "https://res.cloudinary.com/viki07/image/upload/service-images/portfolio/h4rzm83p9tjdbwv4se6o.png"
+        },
+        {
+            "skillName": "GOlang",
+            "proficiency": "60",
+            "imageLink": "https://res.cloudinary.com/viki07/image/upload/v1750157657/service-images/portfolio/eaih6rvhizsjtnngrmqp.png"
+        }
+        
       ]
     },
     {
@@ -343,7 +204,7 @@ export const data =[
         {
           "projectName": "Portfolio Website",
           "projectDesc": "My developer portfolio made with beautiful and responsive UI with flowing animations with intention to demonstrate my potential as a candidate for various opportunities and to showcase my strengths and capabilities to potential employers or collaborators.",
-          "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1730475841/ewmhexbqfgha6wd8hnd3.png",
+          "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1750157533/service-images/portfolio/u7lnqgufdbsjaefhaecg.png",
           "projectLink": null,
           "githubLink": "https://github.com/viki-777/portfolio",
           "projectDuration": "Nov 2024",

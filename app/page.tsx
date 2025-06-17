@@ -12,22 +12,24 @@ import { data } from "@/public/assets/data";
 
 import { useState, useEffect } from "react";
 import Projects from "../components/projects/Projects"
-import { AboutData, HeroData, HeaderData, SkillsData, ProjectsData } from '@/public/types';
+import {HeroData, HeaderData, SkillsData, ProjectsData } from '@/public/types';
 
 
 
 export default function Home() {
   const [width, setWidth] = useState(0);
 
-  // Update the width on component mount
+ 
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
 
   return (
-    <div className="
-    bg-black
     
+
+    
+    <div className="
+  
     text-white h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll z-0 sm:scrollbar-thin sm:scrollbar-thumb-[#F7AB0A]/80 sm:scrollbar-transparent sm:scrollbar-thumb-rounded-full sm:scrollbar-track-rounded-full">
       {/* Passing specific data to the Header component */}
       <Header data={data[5] as HeaderData} />
@@ -37,7 +39,7 @@ export default function Home() {
         <Hero data={data[1] as HeroData} />
       </section>
       <section id="about" className="snap-center snap-mandatory  snap-always">
-        <About data={data[0] as AboutData} />
+        <About />
       </section>
       <section id="skills" className="snap-start snap-mandatory  snap-always">
         <Skills data={data[3] as SkillsData} />
@@ -56,5 +58,6 @@ export default function Home() {
       </section>
 
     </div>
+
   );
 }

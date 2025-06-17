@@ -1,10 +1,11 @@
-export interface AboutData {
-    _id: string;
-    aboutText: string;
-    section: string;
-    aboutImage: string ;
-    aboutHoverImage: string;
-  }
+
+export type AboutData = {
+  name: string;
+  mainImage: string;
+  avatarImage: string;
+  githubUrl: string;
+  skills: Skill[];
+};
   
   export interface HeroData {
     _id: string;

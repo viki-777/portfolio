@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <>
       <div className="min-h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-4 md:px-10 justify-evenly mx-auto items-center py-24 md:py-0">
-        <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl cursor-default">
+        <h3 className="absolute top-24 uppercase tracking-[20px]   text-xl md:text-2xl cursor-default">
           Contact
         </h3>
 

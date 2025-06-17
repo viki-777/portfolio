@@ -70,10 +70,10 @@ function Skills(props: Props) {
 
   return (
     <div className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center z-0">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl cursor-default ">
+      <h3 className="absolute top-24 uppercase tracking-[20px]   text-2xl cursor-default ">
         Skills
       </h3>
-      <h3 className="  absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm cursor-default ">
+      <h3 className="  absolute top-36 uppercase tracking-[3px]   text-sm cursor-default ">
         hover for proficiency
       </h3>
       <div className="pt-32 w-[90vw] h-[60vh]  md:w-[40vw] flex justify-center items-center z-20">
@@ -123,7 +123,7 @@ function Skills(props: Props) {
       </div>
 
       <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] skew-y-12 flex items-end justify-start xl:items-start  xl:justify-end ">
-        <h3 className="w-[35vw] sm:w-[32vw] h-fit text-xl md:text-[7vh] md:text-5xl text-gray-500/50 uppercase p-4 pt-11 pb-6 tracking-[20px]  transition-all ease-in-out duration-150 animate-[bounce_2s_ease-in-out_infinite]">
+        <h3 className="w-[35vw] sm:w-[32vw] h-fit text-xl md:text-[7vh] md:text-5xl  /50 uppercase p-4 pt-11 pb-6 tracking-[20px]  transition-all ease-in-out duration-150 animate-[bounce_2s_ease-in-out_infinite]">
           {skillName}
         </h3>
       </div>
