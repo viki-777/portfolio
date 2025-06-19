@@ -301,6 +301,30 @@ export const data =[
           }
           
             ]
+        },
+        {
+          "projectName": "Human Activity Recognition System",
+          "projectDesc": "Built a real-time Human Activity Recognition (HAR) system using Temporal Convolutional Networks (TCN) for classifying activities like Walking, Jogging, and Sitting from smartphone sensor data. Developed a backend server to process live accelerometer and gyroscope streams via WebSocket, perform windowing and scaling, and run low-latency inference (~50ms). Integrated with an Android app for real-time predictions. Achieved 99% offline and 91% real-world accuracy by combining public and custom datasets, enabling accurate recognition of challenging activity pairs like Walking vs. Stairs.",
+          "projectImage": "https://res.cloudinary.com/viki07/image/upload/v1750334371/service-images/portfolio/dpn7m4k7a9xwq6askmc0.gif",
+          "projectLink": "https://github.com/viki-777/HAR_classifier/",
+          "githubLink": "hhttps://github.com/viki-777/HAR_classifier",
+          "projectDuration": "march 2025",
+          "techStack": [
+            {
+              "name": "Python",
+              "url": "https://res.cloudinary.com/viki07/image/upload/v1750334529/service-images/portfolio/ialdjfqapmm8te1puojr.jpg"
+          },
+          {
+              "name": "JavaScript",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+          },
+          {
+              "name": "keras",
+              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn3G7aNWlBFrxvcqPJlFkdUqQ3mSxFokba9g&s"
+          }
+       
+          
+            ]
         }
       ]
     },
